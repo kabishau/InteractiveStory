@@ -12,6 +12,7 @@
 		5B9FE9BB219A872800ED0E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FE9B9219A872800ED0E82 /* Main.storyboard */; };
 		5B9FE9BD219A872900ED0E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FE9BC219A872900ED0E82 /* Assets.xcassets */; };
 		5B9FE9C0219A872900ED0E82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FE9BE219A872900ED0E82 /* LaunchScreen.storyboard */; };
+		6B8FA9C421A0838A005E7C0D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8FA9C321A0838A005E7C0D /* Page.swift */; };
 		6BB06AFD219E04AF00147D25 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB06AFC219E04AF00147D25 /* Story.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5B9FE9BC219A872900ED0E82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9FE9BF219A872900ED0E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B9FE9C1219A872900ED0E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B8FA9C321A0838A005E7C0D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		6BB06AFC219E04AF00147D25 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				5B9FE9BE219A872900ED0E82 /* LaunchScreen.storyboard */,
 				5B9FE9C1219A872900ED0E82 /* Info.plist */,
 				6BB06AFC219E04AF00147D25 /* Story.swift */,
+				6B8FA9C321A0838A005E7C0D /* Page.swift */,
 			);
 			path = InteractiveStory;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				5B9FE9B8219A872800ED0E82 /* ViewController.swift in Sources */,
 				5B9FE9B6219A872800ED0E82 /* AppDelegate.swift in Sources */,
+				6B8FA9C421A0838A005E7C0D /* Page.swift in Sources */,
 				6BB06AFD219E04AF00147D25 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
