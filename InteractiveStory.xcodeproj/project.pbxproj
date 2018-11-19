@@ -61,14 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				5B9FE9B5219A872800ED0E82 /* AppDelegate.swift */,
+				6BB06AFC219E04AF00147D25 /* Story.swift */,
+				6B8FA9C321A0838A005E7C0D /* Page.swift */,
 				5B9FE9B7219A872800ED0E82 /* ViewController.swift */,
+				6B8FA9C521A097EA005E7C0D /* PageController.swift */,
 				5B9FE9B9219A872800ED0E82 /* Main.storyboard */,
 				5B9FE9BC219A872900ED0E82 /* Assets.xcassets */,
 				5B9FE9BE219A872900ED0E82 /* LaunchScreen.storyboard */,
 				5B9FE9C1219A872900ED0E82 /* Info.plist */,
-				6BB06AFC219E04AF00147D25 /* Story.swift */,
-				6B8FA9C321A0838A005E7C0D /* Page.swift */,
-				6B8FA9C521A097EA005E7C0D /* PageController.swift */,
 			);
 			path = InteractiveStory;
 			sourceTree = "<group>";
