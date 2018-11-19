@@ -23,7 +23,7 @@ extension Story {
 }
 
 extension Page {
-    // helper method - don't really understand the meaning of the method
+    // helper method - in case of true returns formatted string, false - plain string
     func story(attributed: Bool) -> NSAttributedString {
         if attributed {
             return story.attributedText
