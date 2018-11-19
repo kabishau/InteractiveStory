@@ -26,6 +26,8 @@ class PageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .white
+        
         if let page = page {
             artworkView.image = page.story.artwork
             
@@ -41,12 +43,15 @@ class PageController: UIViewController {
             
             if let firstChoice = page.firstChoice {
                 firstChoiceButton.setTitle(firstChoice.title, for: .normal)
+                firstChoiceButton.addTarget(self, action: #selector(PageController.loadFirstChoice), for: .touchUpInside)
             } else {
                 firstChoiceButton.setTitle("Play Again", for: .normal)
+                firstChoiceButton.addTarget(self, action: #selector(PageController.playAgain), for: .touchUpInside)
             }
             
             if let secondChoice = page.secondChoice {
                 secondChoiceButton.setTitle(secondChoice.title, for: .normal)
+                secondChoiceButton.addTarget(self, action: #selector(PageController.loadSecondChoice), for: .touchUpInside)
             }
         }
     }
@@ -88,6 +93,30 @@ class PageController: UIViewController {
             secondChoiceButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32.0)
             ])
         
+    }
+    
+    // helper methods
+    
+    @objc func loadFirstChoice() {
+        if let page = page, let firstChoice = page.firstChoice {
+            let nextPage = firstChoice.page
+            let pageController = PageController(page: nextPage)
+            
+            navigationController?.pushViewController(pageController, animated: true)
+        }
+    }
+    
+    @objc func loadSecondChoice() {
+        if let page = page, let secondChoice = page.secondChoice {
+            let nextPage = secondChoice.page
+            let pageController = PageController(page: nextPage)
+            
+            navigationController?.pushViewController(pageController, animated: true)
+        }
+    }
+    
+    @objc func playAgain() {
+        navigationController?.popToRootViewController(animated: true)
     }
 }
 
